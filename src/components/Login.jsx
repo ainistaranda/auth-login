@@ -2,7 +2,7 @@ import { Button, Form, Input, Layout } from "antd"
 
 export default function Login({ setUser, setToken }) {
   const handleFormSubmit = (values) => {
-    console.log('Success:' , values)
+    // console.log('Success:' , values)
     fetch('http://localhost:3030/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

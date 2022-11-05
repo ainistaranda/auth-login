@@ -3,8 +3,9 @@ import { Button, Form, Input, Layout } from 'antd'
 
 export default function Profile({ user, token, setUser }) {
   const handleProfileUpdate = (values) => {
+    console.log(user)
     //send form values and token to api
-    fetch(`http://localhost/users/${user.uid}`, { 
+    fetch(`http://localhost:3030/users/${user.uid}`, { 
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
